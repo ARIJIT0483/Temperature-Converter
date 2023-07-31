@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffc15e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    position: relative;
+    top: 20vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    height: 400px;
+    width: 600px;
+    box-shadow: 0 0 5px grey;
+    background-color: #e09f3e;
+}
+h1{
+   text-align: center;
+   font-size: 53px;
+   font-weight: 900;
+   color: #332104;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#output-f{
+    text-align: center;
+    font-size: 25px;
+    width: 320px;
+    outline: none;
+    border: none;
+    background-color: #f5ee9e;
+    border: 3px solid #cc5803;
+    display: inline;
+    height: 70px;
+}
+#output-k{
+    text-align: center;
+    width: 320px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background-color: #f5ee9e;
+    border: 3px solid #cc5803;
+    display: inline;
+    height: 70px;
+}
+#text{
+    text-align: center;
+    width: 320px;
+    font-size: 25px;
+    outline: none;
+    border: none;
+    background-color: #f5ee9e;
+    border: 3px solid #cc5803;
+    display: inline;
+    height: 70px;
+}
+#convert{
+    height: 38px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: none;
+    padding: 5px;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-align: center;
+    vertical-align: middle;
+    background-color: blue;
+    box-shadow: 0px 2px 5px black;
+}
+.inputBox{
+    display: flex;
+    margin: 0 75px;
+}
+.cUnit{
+    height: 70px;
+    width: 70px;
+    background-color: #cc5803;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 900;
+    color: #332104;
+}
+#convert:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+@media screen and (max-width:630px) {
+    h1{
+        font-size: 29px;
+    }
+    .container{
+        width: 90vw;
+        margin: 0 100px !important;
+    }
+    #text, #output-f, #output-k{
+        width: 230px;
+        height: 60px;
+        font-size: 23px;
+    }
+    .cUnit{
+        height: 60px;
+        width: 60px;
+        font-size: 30px;
+    }
+}
